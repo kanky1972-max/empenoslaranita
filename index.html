@@ -173,21 +173,23 @@
       </div>
     </div>
 
-    <div class="relative hidden lg:flex justify-center items-center reveal">
-      <div class="absolute w-80 h-80 bg-brand-cream rounded-full"></div>
-      <img src="logo.png" alt="La Ranita" class="relative w-64 h-64 drop-shadow-2xl">
+    <div class="relative hidden lg:flex flex-col items-center gap-4 reveal">
+      <div class="relative flex justify-center items-center -mt-6">
+        <div class="absolute w-80 h-80 bg-brand-cream rounded-full"></div>
+        <img src="logo.png" alt="La Ranita" class="relative w-64 h-64 drop-shadow-2xl">
+      </div>
+      <div class="relative flex justify-center gap-4">
+        <img src="promo-dinero-electronico.png" alt="Programa de Dinero Electrónico" class="w-36 h-36 object-cover rounded-2xl shadow-lg">
+        <img src="promo-refrendo.jpg" alt="50% de descuento en tu primer refrendo" class="w-36 h-36 object-cover rounded-2xl shadow-lg">
+      </div>
     </div>
   </div>
 </section>
 
-<!-- Promo: Dinero Electrónico -->
-<section class="bg-brand-green">
-  <div class="max-w-4xl mx-auto px-6 py-3.5 flex items-center justify-center gap-3 text-center flex-wrap">
-    <i data-lucide="wallet" class="w-5 h-5 text-brand-limebright flex-shrink-0"></i>
-    <p class="text-white font-bold text-sm sm:text-base leading-snug">
-      Recibe <span class="text-brand-limebright">Dinero Electrónico</span> en cada operación y úsalo para pagar en La Ranita
-      <span class="block sm:inline text-white/70 font-normal text-xs mt-0.5 sm:mt-0">&nbsp;*Aplican restricciones</span>
-    </p>
+<!-- Promo: Dinero Electrónico (mobile) -->
+<section class="bg-brand-cream py-6 lg:hidden">
+  <div class="max-w-[220px] mx-auto px-6">
+    <img src="promo-dinero-electronico.png" alt="Programa de Dinero Electrónico: gana en cada operación y úsalo para pagar en sucursal" class="w-full rounded-2xl shadow-lg">
   </div>
 </section>
 
@@ -213,9 +215,9 @@
   </div>
 </section>
 
-<!-- Promo: 50% Descuento Primer Refrendo -->
-<section class="bg-white py-12">
-  <div class="max-w-md mx-auto px-6 reveal">
+<!-- Promo: 50% Descuento Primer Refrendo (mobile) -->
+<section class="bg-white py-6 lg:hidden">
+  <div class="max-w-[220px] mx-auto px-6 reveal">
     <img src="promo-refrendo.jpg" alt="Clientes Nuevos: 50% de descuento en tu primer refrendo" class="w-full rounded-2xl shadow-xl">
   </div>
 </section>
