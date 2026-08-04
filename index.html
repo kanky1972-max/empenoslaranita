@@ -116,33 +116,35 @@
       </div>
     </a>
 
-    <nav class="hidden md:flex items-center gap-6 font-bold text-sm text-white">
-      <a href="https://empenos-la-ranita.myshopify.com/" target="_blank" rel="noopener" class="flex items-center gap-1.5 bg-white text-brand-green px-5 py-2.5 rounded-full hover:bg-brand-limebright hover:text-white transition shadow-sm">
+    <nav class="hidden lg:flex items-center gap-5 font-bold text-sm text-white whitespace-nowrap">
+      <a href="https://empenos-la-ranita.myshopify.com/" target="_blank" rel="noopener" class="flex items-center gap-1.5 bg-white text-brand-green px-5 py-2.5 rounded-full hover:bg-brand-limebright hover:text-white transition shadow-sm whitespace-nowrap">
         <i data-lucide="shopping-bag" class="w-4 h-4"></i>Tienda En Línea
       </a>
-      <a href="#empenos" class="hover:text-brand-limebright transition">Empeños</a>
-      <a href="#vehiculos" class="hover:text-brand-limebright transition">Vehículos</a>
-      <a href="#sucursales" class="hover:text-brand-limebright transition">Sucursales</a>
-      <a href="#nosotros" class="hover:text-brand-limebright transition">Sobre La Ranita</a>
-      <a href="#contacto" class="hover:text-brand-limebright transition">Contacto</a>
+      <a href="#empenos" class="hover:text-brand-limebright transition whitespace-nowrap">Empeños</a>
+      <a href="#vehiculos" class="hover:text-brand-limebright transition whitespace-nowrap">Vehículos</a>
+      <a href="#sucursales" class="hover:text-brand-limebright transition whitespace-nowrap">Sucursales</a>
+      <a href="#consulta" class="hover:text-brand-limebright transition whitespace-nowrap">Checa Tu Saldo</a>
+      <a href="#nosotros" class="hover:text-brand-limebright transition whitespace-nowrap">Sobre La Ranita</a>
+      <a href="#contacto" class="hover:text-brand-limebright transition whitespace-nowrap">Contacto</a>
     </nav>
 
     <div class="flex items-center gap-4">
       <a href="tel:+526623100127" class="hidden sm:flex items-center gap-2 font-bold text-white text-sm">
         <i data-lucide="phone" class="w-4 h-4"></i> 662 310 0127
       </a>
-      <button id="menuBtn" aria-label="Abrir menú" class="md:hidden text-white">
+      <button id="menuBtn" aria-label="Abrir menú" class="lg:hidden text-white">
         <i data-lucide="menu" class="w-8 h-8"></i>
       </button>
     </div>
   </div>
 
   <!-- Mobile menu -->
-  <div id="mobileMenu" class="hidden md:hidden bg-white border-t px-4 pb-4 font-bold text-gray-700">
+  <div id="mobileMenu" class="hidden lg:hidden bg-white border-t px-4 pb-4 font-bold text-gray-700">
     <a href="https://empenos-la-ranita.myshopify.com/" target="_blank" rel="noopener" class="flex items-center gap-2 py-2 text-brand-green"><i data-lucide="shopping-bag" class="w-4 h-4"></i>Tienda En Línea</a>
     <a href="#empenos" class="block py-2">Empeños</a>
     <a href="#vehiculos" class="block py-2">Vehículos</a>
     <a href="#sucursales" class="block py-2">Sucursales</a>
+    <a href="#consulta" class="block py-2">Checa Tu Saldo</a>
     <a href="#nosotros" class="block py-2">Sobre La Ranita</a>
     <a href="#contacto" class="block py-2">Contacto</a>
     <a href="tel:+526623100127" class="flex items-center gap-2 py-2 text-brand-green"><i data-lucide="phone" class="w-4 h-4"></i> 662 310 0127</a>
@@ -178,9 +180,15 @@
         <div class="absolute w-80 h-80 bg-brand-cream rounded-full"></div>
         <img src="logo.png" alt="La Ranita" class="relative w-64 h-64 drop-shadow-2xl">
       </div>
-      <div class="relative flex justify-center gap-4">
-        <img src="promo-dinero-electronico.png" alt="Programa de Dinero Electrónico" class="w-36 h-36 object-cover rounded-2xl shadow-lg">
-        <img src="promo-refrendo.jpg" alt="50% de descuento en tu primer refrendo" class="w-36 h-36 object-cover rounded-2xl shadow-lg">
+      <div class="relative flex justify-center gap-5">
+        <div class="flex flex-col items-center gap-2">
+          <img src="promo-dinero-electronico.png" alt="Programa de Dinero Electrónico" class="w-32 h-32 object-cover rounded-2xl shadow-lg ring-4 ring-white">
+          <span class="text-[11px] font-bold text-brand-greendark bg-white px-3 py-1 rounded-full shadow-sm whitespace-nowrap">Dinero Electrónico</span>
+        </div>
+        <div class="flex flex-col items-center gap-2">
+          <img src="promo-refrendo.jpg" alt="50% de descuento en tu primer refrendo" class="w-32 h-32 object-cover rounded-2xl shadow-lg ring-4 ring-white">
+          <span class="text-[11px] font-bold text-brand-red bg-white px-3 py-1 rounded-full shadow-sm whitespace-nowrap">50% en Refrendo</span>
+        </div>
       </div>
     </div>
   </div>
@@ -405,6 +413,43 @@
   </div>
 </section>
 
+<!-- Consulta tu Boleta -->
+<section id="consulta" class="bg-gray-50 py-20">
+  <div class="max-w-xl mx-auto px-6">
+    <div class="text-center mb-10 reveal">
+      <p class="text-brand-lime font-bold uppercase tracking-widest text-sm mb-2">¿Cuánto debo?</p>
+      <h2 class="font-display text-2xl sm:text-3xl font-extrabold">Consulta tu Boleta</h2>
+      <span class="block w-12 h-1 bg-brand-red rounded-full mx-auto mt-4"></span>
+      <p class="text-gray-600 mt-4">Ingresa los datos de tu boleta y te contestamos por WhatsApp cuánto debes y cuánto sería tu refrendo o desempeño el mismo día.</p>
+    </div>
+
+    <form id="boletaForm" class="reveal bg-white rounded-2xl shadow-sm border border-gray-100 p-6 sm:p-8 space-y-5">
+      <div>
+        <label for="boletaSucursal" class="block text-sm font-bold text-gray-700 mb-1.5">Sucursal</label>
+        <select id="boletaSucursal" required class="w-full border border-gray-200 rounded-xl px-4 py-3 text-gray-800 focus:outline-none focus:ring-2 focus:ring-brand-lime">
+          <option value="" disabled selected>Selecciona tu sucursal</option>
+          <option value="Progreso (Matriz)" data-phone="526623466632">Progreso (Matriz)</option>
+          <option value="Solidaridad" data-phone="526624158571">Solidaridad</option>
+          <option value="Norte" data-phone="526624981998">Norte</option>
+          <option value="Lopez Portillo" data-phone="526623958610">Lopez Portillo</option>
+        </select>
+      </div>
+      <div>
+        <label for="boletaNumero" class="block text-sm font-bold text-gray-700 mb-1.5">Número de boleta de empeño</label>
+        <input type="text" id="boletaNumero" required placeholder="Ej. 12345" class="w-full border border-gray-200 rounded-xl px-4 py-3 text-gray-800 focus:outline-none focus:ring-2 focus:ring-brand-lime">
+      </div>
+      <div>
+        <label for="boletaApellido" class="block text-sm font-bold text-gray-700 mb-1.5">Apellido</label>
+        <input type="text" id="boletaApellido" required placeholder="Tu apellido" class="w-full border border-gray-200 rounded-xl px-4 py-3 text-gray-800 focus:outline-none focus:ring-2 focus:ring-brand-lime">
+      </div>
+      <button type="submit" class="w-full flex items-center justify-center gap-2 bg-brand-green text-white font-bold px-7 py-3.5 rounded-full hover:bg-brand-greendark transition shadow-md">
+        <i data-lucide="message-circle" class="w-5 h-5"></i> Checa Tu Saldo
+      </button>
+      <p class="text-center text-xs text-gray-400">Se abrirá WhatsApp con tu consulta lista para enviar a la sucursal.</p>
+    </form>
+  </div>
+</section>
+
 <!-- Horario + Contacto -->
 <section id="contacto" class="relative bg-brand-greendark text-white overflow-hidden">
   <svg class="wave-top" viewBox="0 0 1440 80" preserveAspectRatio="none"><path fill="#ffffff" d="M0,32L60,37.3C120,43,240,53,360,53.3C480,53,600,43,720,42.7C840,43,960,53,1080,58.7C1200,64,1320,64,1380,64L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
@@ -496,6 +541,21 @@
   document.querySelectorAll('#mobileMenu a').forEach(a => {
     a.addEventListener('click', () => mobileMenu.classList.add('hidden'));
   });
+
+  const boletaForm = document.getElementById('boletaForm');
+  if (boletaForm) {
+    boletaForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const sucursalSelect = document.getElementById('boletaSucursal');
+      const sucursal = sucursalSelect.value;
+      const phone = sucursalSelect.selectedOptions[0]?.dataset.phone;
+      const numero = document.getElementById('boletaNumero').value.trim();
+      const apellido = document.getElementById('boletaApellido').value.trim();
+      if (!sucursal || !phone || !numero || !apellido) return;
+      const mensaje = `Hola, quisiera consultar mi boleta de empeño.\nSucursal: ${sucursal}\nNúmero de boleta: ${numero}\nApellido: ${apellido}\n¿Cuánto debo de capital, y cuánto sería para refrendar o desempeñar el día de hoy?`;
+      window.open(`https://wa.me/${phone}?text=${encodeURIComponent(mensaje)}`, '_blank');
+    });
+  }
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
