@@ -117,8 +117,7 @@
     </a>
 
     <nav class="hidden lg:flex items-center gap-5 font-bold text-sm text-white whitespace-nowrap">
-      <a href="https://empenos-la-ranita.myshopify.com/" target="_blank" rel="noopener" class="flex items-center gap-1.5 bg-white text-brand-green px-5 py-2.5 rounded-full hover:bg-brand-limebright hover:text-white transition shadow-sm whitespace-nowrap">
-        <i data-lucide="shopping-bag" class="w-4 h-4"></i>Tienda En Línea
+shopping-bag        <i data-lucide="shopping-bag" class="w-4 h-4"></i>Tienda En Línea
       </a>
       <a href="#empenos" class="hover:text-brand-limebright transition whitespace-nowrap">Empeños</a>
       <a href="#vehiculos" class="hover:text-brand-limebright transition whitespace-nowrap">Vehículos</a>
@@ -128,9 +127,12 @@
       <a href="#contacto" class="hover:text-brand-limebright transition whitespace-nowrap">Contacto</a>
     </nav>
 
-    <div class="flex items-center gap-4">
-      <a href="tel:+526623100127" class="hidden sm:flex items-center gap-2 font-bold text-white text-sm">
-        <i data-lucide="phone" class="w-4 h-4"></i> 662 310 0127
+    <div class="flex items-center gap-2 sm:gap-4">
+      <a href="https://empenos-la-ranita.myshopify.com/" target="_blank" rel="noopener" class="lg:hidden flex items-center gap-1.5 bg-white text-brand-green font-bold text-xs sm:text-sm px-3 sm:px-4 py-2 rounded-full hover:bg-brand-limebright hover:text-white transition shadow-sm whitespace-nowrap">
+        <i data-lucide="shopping-bag" class="w-4 h-4"></i>Tienda En Línea
+      </a>
+      <a href="#sucursales" aria-label="Ver teléfonos y WhatsApp por sucursal" class="hidden sm:flex items-center text-white hover:text-brand-limebright transition">
+        <i data-lucide="phone" class="w-5 h-5"></i>
       </a>
       <button id="menuBtn" aria-label="Abrir menú" class="lg:hidden text-white">
         <i data-lucide="menu" class="w-8 h-8"></i>
@@ -166,7 +168,7 @@
         Desde 2009 sacando del apuro a nuestros valiosos clientes. Préstamos por joyas, electrónicos, herramientas, autos y más &mdash; en 4 sucursales en Hermosillo.
       </p>
       <div class="flex flex-wrap justify-center lg:justify-start gap-4">
-        <a href="https://wa.me/526623466632" target="_blank" rel="noopener" class="flex items-center gap-2 bg-brand-green text-white font-bold px-7 py-3 rounded-full hover:bg-brand-greendark transition shadow-lg">
+        <a href="#sucursales" class="flex items-center gap-2 bg-brand-green text-white font-bold px-7 py-3 rounded-full hover:bg-brand-greendark transition shadow-lg">
           <i data-lucide="message-circle" class="w-5 h-5"></i> Escríbenos por WhatsApp
         </a>
         <a href="#sucursales" class="flex items-center gap-2 border-2 border-brand-green text-brand-green font-bold px-7 py-3 rounded-full hover:bg-brand-green hover:text-white transition">
@@ -475,7 +477,7 @@
       </div>
     </div>
 
-    <div class="mt-14 pt-10 border-t border-white/10">
+    <div id="telefonos-sucursales" class="mt-14 pt-10 border-t border-white/10 scroll-mt-24">
       <p class="text-brand-limebright font-bold uppercase tracking-widest text-sm mb-6 text-center">Teléfono y WhatsApp por Sucursal</p>
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <div class="bg-white/10 rounded-xl p-4 text-center">
